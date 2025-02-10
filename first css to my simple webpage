@@ -1,0 +1,101 @@
+body {
+    font-size: 1.125rem;
+    margin: 0;
+    background-color: pink;
+
+}
+
+/* setting the media screen to a min width of 400px */
+/* @media (min-width:400px) {
+    body {
+        background-color: yellow;
+    }
+
+} */
+
+/* setting the media screen to a min-width of 650px */
+
+/* @media (min-width:650px) {
+    body {
+        background-color: grey;
+    }
+
+} */
+
+
+
+
+
+
+h1 {
+    font-size: 3rem;
+    color: #212614;
+    text-align: center;
+}
+
+h1 span {
+    color: #b7832f;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    padding: 0;
+}
+
+.col-bg {
+    background-color: #212614;
+    padding: 1em;
+    color: white;
+}
+
+.col-1 {
+    width: 20%;
+}
+
+.col-2 {
+    width: 45%;
+}
+
+.col-3 {
+    width: 70%;
+}
+
+@media (max-width:600px) {
+
+    .col-1,
+    .col-2,
+    .col-3 {
+        width: 100%;
+    }
+}
+
+
+
+
+.container {
+    width: 95%;
+    max-width: 930;
+    margin: auto;
+
+}
+
+
+.coloumns {
+    display: flex;
+    margin: 1em 0;
+    justify-content: space-between;
+}
+
+@media (max-width:600px) {
+    .coloumns {
+        flex-direction: column;
+    }
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
