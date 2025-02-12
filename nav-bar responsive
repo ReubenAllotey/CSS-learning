@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* typography */
+
+.container {
+
+    margin: 0 auto;
+    width: 90%;
+    max-width: 900;
+
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:675px) {
+    .container-nav {
+        flex-direction: column;
+    }
+}
+
+
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #134774;
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+.sub-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.75rem;
+    color: #27d217;
+    font-weight: bold;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 2em 0;
+
+}
+
+@media (max-width:675px) {
+    header {
+        text-align: center;
+    }
+}
+
+
+
+/* navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    text-decoration: none;
+}
+
+@media (max-width:675px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+nav ul li {
+
+    margin-left: 2em;
+}
+
+@media (max-width:675px) {
+
+    nav ul li {
+        margin: 0.5em;
+    }
+
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 600;
+    padding: 0.25rem;
+
+}
+
+
+nav a:hover,
+:focus {
+    color: #1792D2;
+}
+
+.current-page {
+    border-bottom: solid;
+}
+
+.current-page:hover {
+    color: #707070;
+    ;
+}
