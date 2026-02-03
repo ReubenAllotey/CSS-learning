@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      /* h3 {
+        font-size: 30px;
+        font-family: sans-serif;
+      }
+      .slide-text {
+        position: relative;
+        animation: slideIn 1s ease-out forwards;
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(100);
+          opacity: 1;
+        }
+      } */
+
+      .marquee {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .marquee-track {
+        display: flex;
+        width: max-content;
+        animation: scroll 12s linear infinite; /*the how fast or slow the text moves*/
+      }
+
+      .marquee-track span {
+        padding-right: 50px; /* space between repeats */
+        font-size: 1.2rem;
+      }
+
+      @keyframes scroll {
+        from {
+          transform: translateX(-50%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      .partners-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: auto;
+        margin: 10px;
+        align-items: center;
+        gap: 20px;
+        overflow: hidden;
+        position: relative;
+      }
+      .logo {
+        width: 300px;
+        color: rgb(15, 15, 79);
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+        margin: 5px 5px;
+        padding: 5px 5px;
+        transition: transform 0.3s ease-in;
+        text-align: center;
+      }
+
+      .logo:hover {
+        transform: translateY(-8px);
+      }
+
+      .logo img {
+        width: 80px;
+        border-radius: 50%;
+      }
+      .partners-container-slide {
+        animation: scroll 12s linear infinite;
+        display: flex;
+        width: max-content;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 class="slide-text">Classic White Shirt</h3>
+
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>🔥 New arrivals available now — shop the latest styles 🔥</span>
+      </div>
+    </div>
+    <div class="partners-container">
+      <div class="partners-container-slide">
+        <div class="logo">
+          <img src="images/logo1.jpg" alt="" />
+          <p>Company</p>
+        </div>
+        <div class="logo">
+          <img src="images/logo2.jpg" alt="" />
+          <p>Company</p>
+        </div>
+        <div class="logo">
+          <img src="images/amazon.png" alt="" />
+          <p>Amazon</p>
+        </div>
+        <div class="logo">
+          <img src="images/micosoft.png" alt="" />
+          <p>Microsoft</p>
+        </div>
+        <div class="logo">
+          <img src="images/mastercard.png" alt="" />
+          <p>MasterCard</p>
+        </div>
+        <div class="logo">
+          <img src="images/meta-logo.png" alt="" />
+          <p>Meta</p>
+        </div>
+
+        <!-- duplicate set (IMPORTANT) -->
+        <div class="logo">
+          <img src="images/logo1.jpg" />
+          <p>Company</p>
+        </div>
+        <div class="logo">
+          <img src="images/logo2.jpg" />
+          <p>Company</p>
+        </div>
+        <div class="logo">
+          <img src="images/amazon.png" />
+          <p>Amazon</p>
+        </div>
+        <div class="logo">
+          <img src="images/micosoft.png" />
+          <p>Microsoft</p>
+        </div>
+        <div class="logo">
+          <img src="images/mastercard.png" />
+          <p>MasterCard</p>
+        </div>
+        <div class="logo">
+          <img src="images/meta-logo.png" />
+          <p>Meta</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
